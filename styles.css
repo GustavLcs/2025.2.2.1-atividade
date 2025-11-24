@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: auto;
+}
+
+:root {
+  --primary-color: rgb(200, 150, 0);
+  --dark-primary-color: rgb(160, 110, 0);
+  --secondary-color: rgb(0, 10, 100);
+  --dark-secondary-color: rgb(0, 0, 60);
+  --terciary-color: coral;
+  --light-terciary-color: rgb(255, 150, 110);
+  --neutral-color: rgb(255, 200, 160);
+  --highlight-color: darkred;
+}
+
+body {
+  font-family: Calibri;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.secao {
+  padding: 50px 0;
+}
+
+.secao h2 {
+  color: white;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.header-principal {
+  color: var(--secondary-color);
+  padding: 30px 30px;
+  background-color: var(--primary-color);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+#cores {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+}
+
+#cores div {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: var(--dark-secondary-color);
+  margin: 20px auto;
+  padding: 3px 0;
+  width: 80%;
+  border-radius: 32px;
+}
+
+#cores .card {
+  margin: 25px auto;
+  padding: 5px 0;
+  transition: 0.35s;
+}
+
+#cores .cor-nome {
+  background-color: red;
+}
+
+#cores .cor-hex {
+  background-color: #3498db;
+}
+
+#cores .cor-rgb {
+  background-color: rgb(46, 204, 113);
+}
+
+#cores .cor-rgba {
+  background-color: rgba(155, 89, 182, 0.7);
+}
+
+#cores .cor-hsl {
+  background-color: hsl(48, 89%, 60%);
+}
+
+#cores .paleta-cores h3 {
+  color: var(--primary-color);
+  font-size: 23px;
+  padding: 10px 0 0;
+}
+
+#cores .paleta-grid {
+  box-shadow: none;
+}
+
+#cores .cor-item{
+  font-weight: 800;
+  width: 40%;
+  padding: 10px 0;
+}
+
+#cores .cor-primaria {
+  background-color: var(--primary-color);
+}
+
+#cores .cor-secundaria {
+  color: var(--neutral-color);
+  background-color: var(--secondary-color);
+}
+
+#cores .cor-terciaria {
+  background-color: var(--terciary-color);
+}
+
+#cores .cor-acento {
+  background-color: var(--highlight-color);
+}
+
+#cores .cor-neutra {
+  background-color: var(--neutral-color)
+}
+
+#tipografia {
+  background-color: var(--primary-color);
+}
+
+#tipografia .tipo-exemplo {
+  width: 80%;
+  margin: 20px auto;
+  padding: 18px 0;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  background-color: var(--dark-primary-color);
+}
+
+#tipografia .exemplo-tipografia p {
+  color: var(--dark-secondary-color);
+  margin: 12px 15%;
+}
+
+#tipografia .tipo-roboto{
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+#tipografia .peso-light {
+  font-weight: 300;
+}
+
+#tipografia .peso-normal {
+  font-weight: 400;
+}
+
+#tipografia .peso-bold {
+  font-weight: 700;
+}
+
+#tipografia .tipo-playfair {
+  font-family: 'Playfair Display';
+}
+
+#tipografia .tipo-playfair p {
+  font-weight: 700;
+}
+
+#tipografia .tipo-sistema {
+  font-family: sans-serif;
+}
+
+#tipografia .tamanho-14 {
+  font-size: 14px;
+}
+
+#tipografia .tamanho-16 {
+  font-size: 16px;
+}
+
+#tipografia .tamanho-18 {
+  font-size: 18px;
+}
+
+#tipografia .tamanho-24 {
+  font-size: 24px;
+}
+
+#tipografia .linha-compacta {
+  line-height: 1.2;
+}
+
+#tipografia .linha-normal {
+  line-height: 1.5;
+}
+
+#tipografia .linha-ampla {
+  line-height: 2.0;
+}
+
+#backgrounds {
+  background-color: var(--light-terciary-color);
+}
+
+#backgrounds .exemplo-grid, .exemplo-posicao {
+  width: 80%;
+  padding: 20px 0;
+  margin: 20px auto;
+  border-radius: 32px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  background-color: var(--terciary-color);
+}
+
+#backgrounds .card, .pos-item {
+  color: var(--neutral-color);
+  font-weight: 700;
+  width: 70%;
+  padding: 30px 0;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  margin: 15px auto;
+  transition: 0.5s;
+}
+
+#backgrounds .bg-cor {
+  background-color: darkgreen;
+}
+
+#backgrounds .bg-imagem, .bg-cover, .bg-contain {
+  background-image: url(vintage-green-bg.jpg);
+}
+
+#backgrounds .bg-cover {
+  background-size: cover;
+}
+
+#backgrounds .bg-contain {
+  background-size: contain;
+}
+
+#backgrounds .pos-item{
+  font-size: 20px;
+  background-image: url(vintage-green-bg.jpg);
+}
+
+#backgrounds .bg-pos-center {
+  background-position: center;
+}
+
+#backgrounds .bg-pos-top {
+  background-position: top;
+}
+
+#backgrounds .bg-pos-bottom {
+  background-position: bottom;
+}
+
+#backgrounds .bg-pos-left {
+  background-position: left;
+}
+
+#backgrounds .bg-pos-right {
+  background-position: right;
+}
+
+#gradientes {
+  background-color: var(--primary-color);
+}
+
+#gradientes .gradientes-showcase, .gradiente-item {
+  width: 80%;
+  margin: 20px auto 0;
+}
+
+#gradientes .gradientes-showcase {
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  padding: 25px 0;
+  border-radius: 32px;
+  background-color: var(--dark-primary-color)
+}
+
+#gradientes .gradiente-item {
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  padding: 10px;
+  margin: 25px auto;
+}
+
+#gradientes .grad-linear-2 {
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+#gradientes .grad-linear-3 {
+  background: linear-gradient(to right, #f093fb, #f5576c, #ffd140);
+}
+
+#gradientes .grad-linear-diagonal {
+  background: linear-gradient(45deg, #fa8bff, #2bd2ff, #2bff88);
+}
+
+#gradientes .grad-radial {
+  background: radial-gradient(circle, #667eea, #764ba2)
+}
+
+#gradientes .grad-complexo {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+#gradientes .grad-radial-complexo {
+  background: radial-gradient(circle at top left, #fa8bff, #2bd2ff, #2bff88);
+}
+
+#exercicio {
+  background-color: var(--secondary-color);
+}
+
+#exercicio .exercicio-container {
+  color: var(--primary-color);
+}
+
+#exercicio .card-exercicio {
+  margin: 30px auto;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  padding: 50px 0;
+  background: linear-gradient(180deg, var(--dark-secondary-color), var(--dark-primary-color));
+  border-radius: 32px;
+}
+
+#exercicio .card-exercicio p{
+  padding: 20px 30px 40px;
+}
+
+#exercicio .btn-exercicio {
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.35);
+  border: none;
+  border-radius: 12px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-size: 16px;
+  padding: 20px;
+  transition: 0.4s;
+}
+
+#exercicio .btn-exercicio:hover {
+  cursor: pointer;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.footer-principal {
+  padding: 20px 0;
+}
